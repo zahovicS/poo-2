@@ -16,5 +16,10 @@
 			echo "<br/>";
 			echo $this->titulo,PHP_EOL, $this->cargo;
 		}
+		/*
+		protected function show()
+		{
+			echo "metodo sobreescrito";
+		}*/
 	}
 ?>

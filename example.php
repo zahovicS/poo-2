@@ -1,15 +1,9 @@
 <?php 
 include "Transporte.php";
 include "autos.php";
-include "aviones.php";
-
-$objAuto=new autos(4,4,4);
-$objAuto->Encender_Auto();
+$objAuto=new autos("Apex","10-E05J",2,4,4);
 $objAuto->info();
 echo "<br />";
 echo "<br />";
 echo "<br />";
-$objAvion=new aviones(2);
-$objAvion->Encender_Avion();
-$objAvion->informacion();
 ?>

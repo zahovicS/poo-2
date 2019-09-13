@@ -2,10 +2,13 @@
 	class Transporte
 	{
 		private $estado;
-
-		function __construct()
+		private $marca;
+		private $modelo;
+		function __construct($marca,$modelo)
 		{
 			$this->estado="Apagado";
+			$this->marca=$marca;
+			$this->modelo=$modelo;
 		}
 		protected function estado()
 		{

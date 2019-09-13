@@ -18,8 +18,6 @@
 		}
 		public function informacion()
 		{
-			echo "<br />";
-
 			echo "El avion Tiene: ";
 			echo "<br />";
 			echo "Numero de turbinas: ",$this->turbinas;

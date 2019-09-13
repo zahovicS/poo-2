@@ -5,9 +5,9 @@
 		private $pasajeros;
 		private $ruedas;
 
-		function __construct($puertas,$pasajeros,$ruedas)
+		function __construct($marca,$modelo,$puertas,$pasajeros,$ruedas)
 		{
-			parent::__construct();
+			parent::__construct($marca,$modelo);
 			$this->puertas=$puertas;
 			$this->pasajeros=$pasajeros;
 			$this->ruedas=$ruedas;
@@ -22,9 +22,11 @@
 		}
 		public function info()
 		{
-			echo "<br />";
-
 			echo "El auto Tiene: ";
+			echo "<br />";
+			echo "Marca: ",$this->marca;
+			echo "<br />";
+			echo "Modelo: ",$this->modelo;
 			echo "<br />";
 			echo "Numero de puertas: ",$this->puertas;
 			echo "<br />";
